@@ -1,0 +1,294 @@
+body {
+  background-color: #f8f9fa;  /* Your soft off-white background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;   
+  align-items: center;    
+  min-height: 100vh;      
+  font-family: "Segoe UI Historic", "Segoe UI", sans-serif;
+}
+
+.login-body {
+  padding: 30px;              
+  max-width: 450px;         
+}
+/* .meta-logo{
+    margin-bottom: -27px;
+} */
+
+/* Stacks the items vertically */
+.meta-logo {
+  display: flex;
+  flex-direction: column;   
+  align-items: left;    
+  gap: 15px;            
+  width: 100%;
+  margin-bottom: -25px;
+  margin-top: 18px;
+}
+
+/* Adjusts your back arrow styling */
+.back-arrow-img {
+  cursor: pointer;
+  margin-bottom: -2px;
+  
+}
+
+/* Keeps your meta logo tidy */
+.meta-logo-img {
+  display: block;
+}
+
+
+.header1{
+    font-family:"Segoe UI Historic","Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: 24px;
+    color: #111112;
+    margin-bottom: 2px;
+}
+.span1{
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111112;
+}
+.header2{
+    font-size: 17px;
+    font-family: "Segoe UI Historic",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111112;
+    margin-bottom: 7px;
+}
+.firstName{
+    padding: 6px;
+    font-size: calc(225.6 * 60);
+    width: 180px;
+}
+.firstName::placeholder{
+    padding: 1px 2px;
+    margin: 0px -2px;
+}
+.lastName{
+    padding: 6px;
+    font-size: calc(237.6 * 72);
+    width: 180px;
+
+}
+.lastName::placeholder{
+    margin: 0px -2px;
+    padding: 1px 2px;
+}
+.header3{
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111112;
+    font-size: calc(71.49 * 12);
+    margin-bottom: 3px;
+}
+.month-dropdown{
+    padding: 8px;
+    font-size: calc(159.73 * 76);
+    width: 130px;
+    color: #cccccc;
+        border-color: #cccccc;
+
+    
+    
+}
+.month1{
+    padding: 12px 16px;
+    background-color: #ffffff33;
+    font-size: calc(143.73 * 60);
+}
+#day-dropdown{
+    padding: 8px;
+    font-size: calc(159.74 * 76);
+    width: 130px;
+    color: #cccccc;
+        border-color: #cccccc;
+
+
+}
+.day1{
+    padding: 12px 16px;
+    background-color: #ffffff33;
+}
+#year-dropdown{
+    padding: 8px;
+    font-size: calc(159.74 * 76);
+    width: 130px;
+    color: #cccccc;
+    border-color: #cccccc;
+    
+
+}
+.year1{
+    background-color: #ffffff33;
+    padding: 12px 16px;
+}
+.gender-class{
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111112;
+    margin-bottom: 4px;
+    
+}
+.gender1{
+    padding: 12px 16px;
+    background-color: #ffffff33;
+    font-size: calc(560 * 60);
+    color: #cccccc;
+        border-color: #cccccc;
+
+}
+.mobile-form{
+    padding: 10px 16px;
+    background-color: #ffffff33;
+    font-size: calc(560 * 60);
+    margin-left: -13px;
+    margin-bottom: -7px;
+}
+.mobile-form::placeholder{
+    margin: 0px -2px;
+    padding: 1px 2px;
+    font-size: calc(530.4 * 38);
+}
+.p-class{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+.a-class{
+    color: #0064e0;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* .pass-form{
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111112;
+} */
+.pass-form{
+    padding: 10px 16px;
+    background-color: #ffffff33;
+    margin-left: -12px;
+    margin-bottom: -5px;
+}
+.pass1::placeholder{
+    margin: 0px -2px;
+    padding: 1px 2px;
+}
+.p-class2{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111112;
+    margin-bottom: -10px;
+}
+.a-class2{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0064e0;
+}
+.p-class3{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111112;
+
+}
+.a-class3{
+    color: #0064e0;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.p-class4{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111112;
+    margin-top: -10px;
+}
+.a-class4{
+    font: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0064e0;
+}
+#btn-form{
+    padding: 0px 20px;
+    background-color: #0064e0;
+    font-size: calc(600 * 44);
+
+}
+#btn2-form{
+    background-color: #ffffff33;
+    color: #111112;
+    padding: 0px 20px;
+    font-size: calc(600 * 44);
+}
+input{
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+}
+.month-dropdown, 
+#day-dropdown, 
+#year-dropdown, 
+.gender1 {
+  border-radius: 6px;
+  padding: 6px;
+}
+#btn2-form{
+    border-radius: 50px;      
+  padding: 12px 30px;      
+  border: none;
+  background-color: #ffffff33;
+  color:black;           
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid grey;   
+  border-radius: 50px;        
+  background-color: #ffffff;   
+  color: black;
+  width: fit-content;
+}
+#btn-form {
+  border-radius: 50px;      
+  padding: 12px 30px;      
+  border: none;
+  background-color: #007bff;
+  color: white;            
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+
+}
+/* The main wrapper holding your text and buttons */
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+}
+
+.center-container p {
+  text-align: left;       
+  width: 100%;             
+}
+
+
+/* Force the buttons to stretch to the paragraph's natural width */
+.btn-group {
+  display: flex;
+  flex-direction: column;   
+  width: max-content;       
+  gap: 10px;               
+  margin-top: 15px;         
+}
+
+/* Make your curved buttons fill 100% of that shared width */
+#btn-form,
+#btn2-form {
+  width: 100%;          
+  border-radius: 50px;     
+  padding: 12px 20px;
+  box-sizing: border-box;
+  width: 400px
+}
+
+

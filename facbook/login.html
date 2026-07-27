@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="login-body">
+
+<div class="back-btn">
+
+</div>
+
+<div class="meta-logo">
+    <img src="Image/images.png" width="10px" height="auto" class="back-arrow-img">
+    <img src="Image/Meta-Logo.png" width="75px" height="auto" class="meta-logo-img">
+</div>
+
+<div class="header">
+    <h3 class="header1">Get started on Facebook</h3>
+    <span class="span1">Create an account to connect with friends, family and communities of people who share your interests</span>
+</div>
+
+<div class="login-form">
+    <form>
+        <!-- Name Form -->
+        <h3 class="header2">Name</h3>
+        <input class="firstName" type="text" name="text" class="name-form" placeholder="First name">
+        <input class="lastName" type="text" name="text" class="name-form" placeholder="Last name">
+
+
+        <!-- Birthday Form -->
+        <h3 class="header3">Birthday</h3>
+        <select class="month-dropdown" required>
+            <option value="" disabled selected hidden class="month1">Month</option>
+            <option>January</option>
+            <option>Feburary</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+        </select>
+
+        <select id="day-dropdown" required>
+            <option value="" disabled selected hidden class="day1">Day</option>
+        </select>
+
+        <!-- I used JavaScript because the timeline is so long -->
+        <script>
+            const selectDay = document.getElementById("day-dropdown");
+            
+            // Loop from 1-31
+            for(let day = 1; day <= 31; day++){
+                const option = document.createElement("option");
+                option.value = day;
+                option.textContent = day;
+                selectDay.appendChild(option);
+            }
+        </script>
+        
+
+        <select id="year-dropdown"required>
+            <option value="" disabled selected hidden class="year1">Year</option>
+        </select>
+
+        <!-- I used JavaScript because the timeline is so long -->
+        <script>
+            const select = document.getElementById("year-dropdown");
+            // Loop from 1876 to 2026
+            for(let year = 2026; year >= 1876; year--){
+                const option = document.createElement("option");
+                option.value = year;
+                option.textContent = year;
+                select.appendChild(option);
+            }
+        </script>
+
+        <!-- Gender Form -->
+         <h3 class="gender-class">Gender</h3>
+         <select class="gender1" req>
+            <option value="" disabled selected hidden >Select your gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Custom</option>
+         </select>
+
+         <!-- Mobile and Gemail Form -->
+          <h3 class="mobile-form">Mobile number or email</h3>
+          <input placeholder="Mobile number or email">
+
+          <p class="p-class">You may recieve notification from us.<a class="a-class" href="https://web.facebook.com/help/297947214257999/?helpref=uf_share">Learn why we ask for your contact information</a></p>
+
+          <!-- Password Form -->
+           <h3 class="pass-form">Password</h3>
+           <input  class="" type="password"  placeholder="Password">
+
+           <div class="center-container">
+           <p class="p-class2">People who use our service may have uploaded your contact information to Facebook <a href="https://web.facebook.com/help/637205020878504" class="a-class2">Learn more.</a></p>
+
+           <p class="p-calss3">By tapping Submit, you agree to create an account and to Facebook's <a href="https://web.facebook.com/terms.php" class="a-class3">Terms</a>,<a href="https://web.facebook.com/policy.php" class="a-class3">Privacy Policy</a> and <a href="https://web.facebook.com/privacy/policies/cookies/?entry_point=cookie_policy_redirect&entry=0" class="a-class3">Cookies Policy</a>.</p>
+
+           <p class="p-class4">The <a href="https://free.facebook.com/privacy/policy/?entry_point=data_policy_redirect#" class="a-class4">Privacy Policy</a>describes the ways we can use the information we collect when you create an account. For example, we use this information to provide, personalize and improve our products, including ads.</p>
+
+            <div class="btn-container">
+
+           <button onclick="SubmitEvent" id="btn-form">Submit</button>
+           <br/>
+           <br />
+           <button id="btn2-form">I already have an account</button>
+                </div>
+           </div>
+
+    </form>
+</div>
+</div>
+</body>
+</html>
